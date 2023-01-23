@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT Information Assurance Club</title>
+
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- Scroll Reveal -->
+    <link rel="stylesheet" href="css/scrollreveal.min.js">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--link icon page-->
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
+</head>
+<body>
+<!--Alert Wifi disconnected-->     
+    <div class="alert" id="error">
+        <i class="fa-solid fa-wifi icon"></i>
+        <div class="content">
+            <div class="title">
+                Wifi disconnect!
+            </div>
+            <div class="des">
+                Hình như mạng có vẫn đề rồi bạn ê !
+            </div>
+        </div>
+        <i class="fa-solid fa-x close"></i>
+    </div>
+
+    
+<!--Alert Wifi connected-->    
+    <div class="alert" id="success">
+        <i class="fa-solid fa-wifi icon"></i>
+        <div class="content">
+            <div class="title">
+                Wifi connected!
+            </div>
+            <div class="des">
+                Hết vấn đề rồi bạn ê
+            </div>
+        </div>
+        <i class="fa-solid fa-x close"></i>
+    </div>
+<!--Custom Cursor-->
+<!--Context Menu-->    
+        <div class="contextmenu">
+                <ul class="items">
+                <li>
+                        <a href="#" id="refresh">
+                        <span> <i class="fa-solid fa-rotate-right"></i> Refresh </span>
+                        <span>Ctrl+R</span>
+                        </a>
+                </li>
+                <li>
+                        <a href="#" id="copy">
+                        <span><i class="fa-solid fa-clone"></i> Copy </span>
+                        </a>
+                </li>  
+                <li>
+                        <a href="#" id="paste">
+                        <span> <i class="fa-solid fa-paste"></i> Paste </span>
+                        <span>Ctrl+V</span>
+                        </a>
+                </li>
+                <li>
+                        <a href="#" id="zoom-in">
+                          <span> <i class="fa-solid fa-search-plus"></i> Zoom In </span>
+                          <span>Ctrl+I</span>
+                        </a>
+                </li>
+                <li>
+                        <a href="#" id="zoom-out">
+                          <span> <i class="fa-solid fa-search-minus"></i> Zoom Out </span>
+                          <span>Ctrl+O</span>
+                        </a>
+                </li> 
+                <li>
+                        <a href="#" id="close">
+                        <span> <i class="fa-solid fa-multiply"></i> Đóng </span>
+                        </a>
+                </li>
+                <li>
+                        <a href="#">
+                        <span> <i class="fa-solid fa-arrow-alt-circle-up"></i> Quay về đầu trang </span>
+                        </a>
+                </li>
+                </ul>
+        </div>
+
+<!-- Header -->
+    <header class="header">
+            <nav class="nav container flex">
+                    <a href="#" class="logo-content flex">
+                        <span class="image">
+                                <img src="logo.png" alt="">
+                        </span>
+                        <span class="logo-text">FPT Information Assurance Club</span>
+                    </a>
+
+                    <div class="menu-content">
+                            <ul class="menu-list flex">
+                                    <li><a href="#home" class="nav-link active-navlink">home</a></li>
+                                    <li><a href="#about" class="nav-link">about</a></li>
+                                    <li><a href="#menu" class="nav-link">Blog</a></li>
+                                    <li><a href="#review" class="nav-link">Operator</a></li>
+                            </ul>
+
+                            <div class="media-icons flex">
+                                    <a href="https://www.facebook.com/fptinformationassurance"><i class='bx bxl-facebook'></i></a>
+                                    <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                    <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                                    <a href="https://github.com/FIA-FPT"><i class='bx bxl-github'></i></a>
+                                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class='bx bxl-youtube'></i></a>
+                            </div>
+
+                            <i class='bx bx-x navClose-btn'></i>
+                        </div>
+                        
+                        <div class="contact-content flex">
+                            <i class='bx bx-phone phone-icon' ></i>
+                            <span class="phone-number">113</span>
+                        </div>
+
+                        <i class='bx bx-menu navOpen-btn'></i>
+                </nav>
+        
+    </header>
+
+<!-- Home Section -->
+    <main>
+        <section class="home" id="home">
+                <div class="home-content">
+                        <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                                <img src="images/tech1.jpg" alt="" class="home-img">
+
+                                                <div class="home-details">
+                                                        <div class="home-text">
+                                                                <h4 class="homeSubtitle">Hi, We are FIA Club!</h4>
+                                                                <h2 class="homeTitle">Don't be afraid to find us, <br> we are here to secure your digital life.</h2>
+                                                        </div>
+
+                                                        <button class="button">Explore</button>
+                                                </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                                <img src="images/tech2.jpg" alt="" class="home-img">
+
+                                                <div class="home-details">
+                                                        <div class="home-text">
+                                                                <h4 class="homeSubtitle">Information assurance</h4>
+                                                                <h2 class="homeTitle">We will teach you how to protect yourself <br> from dangers on the internet</h2>
+                                                        </div>
+
+                                                        <button class="button">Explore</button>
+                                                </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                                <img src="images/tech3.jpg" alt="" class="home-img">
+
+                                                <div class="home-details">
+                                                        <div class="home-text">
+                                                                <h4 class="homeSubtitle">study with us</h4>
+                                                                <h2 class="homeTitle">create a project to understand  <br> more about security</h2>
+                                                        </div>
+
+                                                        <button class="button">Explore</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="swiper-button-next swiper-navBtn"></div>
+                                <div class="swiper-button-prev swiper-navBtn"></div>
+                                <div class="swiper-pagination"></div>
+                        </div>
+                </div>
+        </section>
+
+    
+<!-- About Section -->
+        <section class="section about" id="about">
+                <div class="about-content container">
+                        <div class="about-imageContent">
+                                <img src="images/about.jpg" alt="" class="about-img">
+
+                                <div class="aboutImg-textBox">
+                                        <i class='bx bx-flag heart-icon flex'></i>
+                                        <p class="content-description">Don't be afraid to find us, we are here to secure your digital life.</p>
+                                </div>
+                        </div>
+
+                        <div class="about-details">
+                                <div class="about-text">
+                                        <h4 class="content-subtitle"><i>Our Club</i></h4>
+                                        <h2 class="content-title">THÀNH LẬP</h2>
+                                        <p class="content-description">Câu lạc bộ FPT Information Assurance được vinh hạnh làm lễ ra mắt trước hội đồng các giảng viên cũng như toàn thể các bạn sinh viên trong khối ngành Công nghệ Thông tin vào ngày 29/06/2018, cụ thể là trong buổi hội thảo "A New Era of IT Education and Critical Emerging Technologies".</p>
+
+                                        <ul class="about-lists flex">
+                                                <li class="about-list">F</li>
+                                                <li class="about-list dot">.</li>
+                                                <li class="about-list">I</li>
+                                                <li class="about-list dot">.</li>
+                                                <li class="about-list">A</li>
+                                        </ul>
+                                </div>
+
+                                <div class="about-buttons flex">
+                                        <button class="button">About Us</button>
+                                        <a href="#" class="about-link flex">
+                                                <span class="link-text">see more</span>
+                                                <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                                        </a>
+                                </div>
+                        </div>
+
+                </div>
+        </section>
+
+    
+<!-- Blog Section -->
+        <section class="section menu" id="menu">
+            <div class="menu-container container">
+                    <div class="meu-text">
+                            <h4 class="section-subtitle"><i>Our Blog</i></h4>
+                            <h2 class="section-title">Recent Articles</h2>
+                            <p class="section-description">
+                                đây là nơi mà chúng ta có thể nhận các thông báo hay các thông tin quan trọng từ các hoạt động của câu lạc bộ.
+                            </p>
+                    </div>
+
+                    <div class="menu-content">
+                            <div class="menu-items">
+                                    <div class="menu-item flex">
+                                            <img src="images/bkt.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">
+                                                        <a href="https://www.fptufia.me/blog/Test-skill/#/">[FIA] Bài Test member vào CLB FIA</a>
+                                                    </h4>
+                                                    <p class="menuItem-des">Jan 12, 2023</p>
+                                            </div>
+                                    </div>
+                                    <div class="menu-item flex">
+                                            <img src="images/bjd.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">
+                                                        <a href="https://www.fptufia.me/blog/Cloud-Security/#/">[FIA] MỞ ĐĂNG KÝ KHÓA HỌC CLOUD SECURITY</a>
+                                                    </h4>
+                                                    <p class="menuItem-des">Dec 20, 2022</p>
+                                            </div>
+                                    </div>
+                                    <div class="menu-item flex">
+                                            <img src="images/bkt.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">
+                                                        <a href="https://www.fptufia.me/blog/Linux-Fundamental/#/">Linux Fundamental</a>
+                                                    </h4>
+                                                    <p class="menuItem-des">Jul 14, 2021</p>
+                                            </div>
+                                    </div>
+                                    <div class="menu-item flex">
+                                            <img src="images/bkt.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">
+                                                        <a href="https://www.fptufia.me/blog/Hack-Tools/#/">Hack Tools </a>
+                                                    </h4>
+                                                    <p class="menuItem-des">Nov 7, 2020</p>
+                                            </div>
+                                    </div>
+                                    <div class="menu-item flex">
+                                        <img src="images/bkt.png" alt="" class="menu-img">
+
+                                        <div class="menuItem-details">
+                                                <h4 class="menuItem-topic">
+                                                        <a href="https://www.fptufia.me/blog/ELK%20Stack/#/">ELK Stack</a>
+                                                </h4>
+                                                <p class="menuItem-des">Oct 30, 2020</p>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="time-table">
+                                    <span class="time-topic">Số lượng bài viết</span>
+
+                                    <ul class="time-lists">
+                                            <li class="time-list flex">
+                                                    <span class="open-day"> Thông báo</span>
+                                                    <span class="open-time">2</span>
+                                            </li>
+                                            <li class="time-list flex">
+                                                    <span class="open-day"> Bài viết học thuật</span>
+                                                    <span class="open-time">10</span>
+                                            </li>
+                                            <li class="time-list flex">
+                                                    <span class="open-day"> Bài viết sharing</span>
+                                                    <span class="open-time">0</span>
+                                            </li>
+                                            <li class="time-list flex">
+                                                <span class="open-day"> Tổng số bài viết</span>
+                                                <span class="open-time">12</span>
+                                            </li>
+                                            <div class="menu-buttons flex">
+                                                <a href="#" class="menu-link flex">
+                                                        <span class="link-text">see more</span>
+                                                        <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                                                </a>
+                                            </div>
+                                            
+                                            
+                                           
+                                           
+                                    </ul>
+                            </div>
+                    </div>
+            </div>
+        </section>
+
+    
+<!-- Technology Playground Section -->
+        <section class="section brand">
+            <div class="brand-container container">
+                <h4 class="section-subtitle"><i>Our Technology Playground</i></h4>
+                <p class="section-description">
+                        Đến với câu lạc bộ chúng ta sẽ được tham gia các sân chơi công nghệ <br>về trong lĩnh vực bảo mật như CTF.
+                </p>
+
+                <div class="brand-images">
+                        <div class="brand-image">
+                                <img src="images/ctf1.png" alt="" class="brand-img">
+                                <h5>Forensics</h5>
+                        </div>
+                        <div class="brand-image">
+                                <img src="images/ctf2.png" alt="" class="brand-img">
+                                <h5>Cryptography</h5>
+                        </div>
+                        <div class="brand-image">
+                                <img src="images/ctf3.png" alt="" class="brand-img">
+                                <h5>Web Exploitation</h5>
+                        </div>
+                        <div class="brand-image">
+                                <img src="images/ctf4.png" alt="" class="brand-img">
+                                <h5>Reverse Engineering</h5>
+                        </div>
+                        <div class="brand-image">
+                                <img src="images/ctf5.png" alt="" class="brand-img">
+                                <h5>Binary Exploitation</h5>
+                        </div>
+            </div>
+        </section>
+
+    
+<!-- Operators Section -->
+        <section class="section review" id="review">
+            <div class="review-container container">
+                    <div class="review-text">
+                            <h4 class="section-subtitle"><i>Our Operator</i></h4>
+                            <h2 class="section-title">Ban Điều Hành câu lạc bộ</h2>
+                            <p class="section-description">Những người có nhiệm vụ dẫn dắt các FIAer và CLB phát triển!</p>
+                    </div>
+
+                    <div class="tesitmonial swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                    <div class="testi-content swiper-slide flex">
+                                            <img src="images/cn.png" alt="" class="review-img">
+                                            <p class="review-quote">......................................</p>
+                                            <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                            <div class="testi-personDetails flex">
+                                                    <span class="name">Phan Hoàng Nam</span>
+                                                    <span class="job">Chủ Nhiệm</span>
+                                            </div>
+                                    </div>
+                                    <div class="testi-content swiper-slide flex">
+                                            <img src="images/pcn.png" alt="" class="review-img">
+                                            <p class="review-quote">.....................................</p>
+                                            <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                            <div class="testi-personDetails flex">
+                                                    <span class="name">Lương Thanh Long</span>
+                                                    <span class="job">Phó Chủ Nhiệm</span>
+                                            </div>
+                                    </div>
+                                    <div class="testi-content swiper-slide flex">
+                                            <img src="images/tbkt.png" alt="" class="review-img">
+                                            <p class="review-quote">...........................................</p>
+                                            <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                            <div class="testi-personDetails flex">
+                                                    <span class="name">Trần Minh Triết</span>
+                                                    <span class="job">Trưởng ban kỹ thuật</span>
+                                            </div>
+                                    </div>
+                                    <div class="testi-content swiper-slide flex">
+                                        <img src="images/tbns.png" alt="" class="review-img">
+                                        <p class="review-quote">.............................................</p>
+                                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                        <div class="testi-personDetails flex">
+                                                <span class="name">Lê Võ Quang Huy</span>
+                                                <span class="job">Trưởng ban nhân sự</span>
+                                        </div>
+                                </div>
+                                <div class="testi-content swiper-slide flex">
+                                        <img src="images/tbtt.png" alt="" class="review-img">
+                                        <p class="review-quote">Ta biết! Nhưng ta mặc kệ</p>
+                                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                        <div class="testi-personDetails flex">
+                                                <span class="name">Nguyễn Võ Ngọc Anh</span>
+                                                <span class="job">Trưởng ban truyền thông</span>
+                                        </div>
+                                </div>
+                                </div>
+                                <div class="swiper-button-next swiper-navBtn"></div>
+                                <div class="swiper-button-prev swiper-navBtn"></div>
+                                <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+        </section>
+
+    
+<!-- Newsletter Section -->
+        <section class="section newsletter">
+            <div class="newletter-container container">
+                <a href="#" class="logo-content flex">
+                        <span class="image">
+                                <img src="logo.png" alt="">
+                        </span>
+                        <span class="logo-text">FPT Information Assurance Club</span>
+                    </a>
+
+                    <p class="section-description">Hãy để lại lời nhận xét ở dưới này nhé !.</p>
+
+                    <div class="newsletter-inputBox">
+                            <input type="email" placeholder="Nhập gì đó đi:3" class="newletter-input">
+                            <button class="button newsletter-button">Send</button>
+                    </div>
+
+                    <div class="newsletter media-icons flex">
+                        <a href="https://www.facebook.com/fptinformationassurance"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://memehay.com/meme/20211021/cho-vang-chi-thang-tay-vao-mat.jpg"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://memehay.com/meme/20211021/cho-vang-chi-thang-tay-vao-mat.jpg"><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href="https://github.com/FIA-FPT"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </section>
+        
+    
+<!-- Footer Section -->
+        <footer class="section footer">
+            <div class="footer-container container">
+                    <div class="footer-content">
+                        <a href="#" class="logo-content flex">
+                                <span class="image">
+                                        <img src="logo.png" alt="">
+                                </span>
+                                <span class="logo-text">FIA.</span>
+                            </a>
+                            <div class="footer-email flex">
+                                <i class='bx bx-mail-send mail-send-icon'></i>
+
+                                <div class="email-text">
+                                        fiafptinformationassurance@gmail.com
+                                </div>
+                            </div>
+
+                            <div class="footer-location flex">
+                                <i class='bx bx-map map-icon'></i>
+                                
+                                <div class="location-text">
+                                        Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="footer-linkContent">
+                            <ul class="footer-links">
+                                    <h4 class="footerLinks-title">Facility</h4>
+
+                                    <li><a href="#" class="footer-link">RedTeam</a></li>
+                                    <li><a href="#" class="footer-link">BlueTeam</a></li>
+                                    <li><a href="#" class="footer-link">Tools</a></li>
+                                    <li><a href="#" class="footer-link">Linux</a></li>
+                                    <li><a href="#" class="footer-link">News</a></li>
+                            </ul>
+                            <ul class="footer-links">
+                                    <h4 class="footerLinks-title">Facility</h4>
+
+                                    <li><a href="#" class="footer-link">Home</a></li>
+                                    <li><a href="#" class="footer-link">About</a></li>
+                                    <li><a href="#" class="footer-link">Blog</a></li>
+                                    <li><a href="https://memehay.com/meme/20211021/cho-vang-chi-thang-tay-vao-mat.jpg" class="footer-link">Gallery</a></li>
+                            </ul>
+                            <ul class="footer-links">
+                                    <h4 class="footerLinks-title">Support</h4>
+
+                                    <li><a href="#" class="footer-link">About Us</a></li>
+                                    <li><a href="#" class="footer-link">FAQs</a></li>
+                                    <li><a href="#" class="footer-link">Private Policy</a></li>
+                                    <li><a href="#" class="footer-link">Help Us</a></li>
+                            </ul>
+                    </div>
+            </div>
+            <div class="footer-copyRight">&#169; FPT Information Assurance Club</div>
+        </footer>
+
+<!-- Scroll Up -->
+        <a href="#home" class="scrollUp-btn flex">
+                <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+        </a>
+
+</main>
+
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!-- Scroll Reveal -->
+<script src="js/scrollreveal.js"></script>
+
+<!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
